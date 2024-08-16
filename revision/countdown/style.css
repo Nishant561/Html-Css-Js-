@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    padding:10px 25px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px
+}
+
+.img-container{
+    width: 400px;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap:19px;
+}
+
+.info-container h4{
+    text-transform: uppercase;
+}
+
+.deadline{
+    color: rgb(25, 178, 225);
+}
+
+.countdown-container{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.time{
+    padding:14px;
+    font-size:1rem;
+    background-color: rgb(15, 6, 93);
+    color: #fff;
+}

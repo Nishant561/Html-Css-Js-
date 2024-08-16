@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: rgb(212, 255, 255);
+}
+
+.main-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    box-sizing: border-box;
+}
+
+.alert{
+    
+  visibility: hidden;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 2px 0;
+    color: #fff;
+}
+
+.alert-success{
+    visibility: visible;
+    background-color: rgb(49, 150, 49);
+}
+
+.alert-danger{
+    visibility: visible;
+    background-color: rgb(213, 75, 75);
+}
+
+
+.grocery-list{
+    display: flex;
+    width: 100%;
+   margin-bottom: 10px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out .5s;
+    border-radius:10px;
+
+}
+
+.grocery-container{
+   
+    width: 100%;
+    margin-top:20px;
+   
+}
+
+.grocery-list:hover{
+
+    background-color: rgb(196, 240, 254);
+}
+
+.items-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container{
+    display: flex;
+    gap:10px;
+}
+
+.heading-title{
+    text-transform: uppercase;
+    color: rgb(101, 101, 101);
+    padding-bottom: 25px;
+}
+
+.fa-pen-to-square{
+    color: rgb(2, 102, 2);
+}
+
+.fa-trash{
+    color: rgb(247, 43, 43);
+}
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+    width: 100%;
+    
+}
+
+.submit-btn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: .85rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(40, 144, 236);
+    color: #fff;
+    padding: 0.39rem;
+    text-transform: uppercase;
+}
+
+.values{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0.39rem;
+    width:85%;
+    font-size: .85rem;
+    border: none;
+    
+    background-color: rgb(220, 219, 219);
+}
+
+.values:focus{
+    outline: none;
+}

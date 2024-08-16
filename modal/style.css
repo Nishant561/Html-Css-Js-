@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Roboto';
+}
+
+main{
+    background-image: url(wp3078641-goblin-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height:100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-div,
+.main-div1{
+    background-color: rgba(0, 0, 0, 0.3);
+    color:#000;
+    width: 592px;
+    height: 272px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    
+}
+
+.main-div h4{
+    font-size: 3rem;
+}
+
+.open{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding:10px;
+    border-radius: 10px;
+    /* transition: all;
+    transition-duration: 1s; */
+    margin-top:1rem;
+
+    
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(2, 165, 2,.5);
+    visibility: hidden;
+}
+
+.open:hover{
+   color:rgb(2, 165, 2);
+   background-color: #fff;
+}
+
+.dd{
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show{
+    visibility: visible;
+    z-index: 100;
+}

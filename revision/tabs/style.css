@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+.main{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    border: 1px solid black;
+}
+
+.img-section{
+    width:300px;
+
+    
+}
+
+.img-section img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.button-sections{
+    background-color: red;
+    display: flex;
+}
+
+.btn{
+    font-size: 1.5rem;
+    background-color: white;
+    padding:10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.active{
+    background-color: aqua;
+}
+
+
+.information-sections{
+    width: fit-content;
+}
+
+.contents{
+    display: none;
+}
+
+.contents.active{
+    display: block;
+}

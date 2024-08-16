@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 69);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-center{
+    
+    width: 369px;
+    height: 500px;
+    display: flex;
+    /* border:1px solid black; */
+}
+
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+   color: white;
+   
+}
+
+.contents{
+    position: absolute;
+    left: 10px;
+    top:10px;
+    padding: 27px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1681488718957-bba64aa6ce13?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5; 
+    z-index: -1; /* Ensure pseudo-element is behind the content */
+    border-radius: 30px; /* Match the border-radius of the container */
+}
+
+
+.day{
+    font-size:2.5rem;
+}
+
+
+.date{
+    font-size:18px;
+}
+
+.city{
+    padding-top: 26px;
+    font-size: 24px;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.fa-cloud{
+    font-size:5.5rem;
+}
+
+.temperature{
+    font-size: 3rem;
+}
+
+.type{
+    font-size: 1.5rem;
+}
+
+.info-section{
+    width: 345px;
+    height: 415px;
+    
+    color: #fff;
+}
+
+.info-section::before{
+
+    content: "";
+    position: absolute;
+    width: 345px;
+    height: 415px;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    background-color:rgb(6, 6, 36);
+    opacity: .5;
+    z-index: -1;
+
+}
+
+.info-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.info-content2{
+    display: flex;
+}

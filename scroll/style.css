@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    overflow: hidden;
+}
+
+.main-container{
+    height: 100vh;
+    width:100%;
+    background-image: url(hero-bcg.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.main-container nav .logo{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.main-container nav .logo span{
+    color:rgb(12, 153, 209);
+}
+
+.main-container nav .links{
+    color: white;
+}
+
+.main-container nav{
+    display: flex;
+    justify-content: space-between;
+   width: 1200px;
+   margin:0 auto;
+  align-items: center;
+    padding: 16px 20px;
+    height: 50px;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+
+.links{
+    display: flex;
+    
+    gap:53px;
+   
+}
+
+.links li a{
+    font-size: 2rem;
+}
+
+.bars{
+    display: none;
+}
+
+.bars i{
+    font-size: 2rem;
+    color:white;
+    
+}
+
+
+
+
+@media screen and (max-width : 1220px){
+    .bars i,.links li a{
+        font-size: 20px;
+    }
+
+    .links{
+        
+        gap:20px;
+       
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .bars i,.main-container nav .logo{
+        font-size: 18px;
+        color: rgb(255, 252, 252);
+    }
+    .main-container nav{
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+       
+        
+    }
+
+    .bars {
+        display: block;
+    }
+    .links-container{
+        background-color: #fff;
+        height: auto;
+        overflow: hidden;
+        
+        
+    }
+
+    .links{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .links li a{
+        color: black;
+        
+        
+    }
+
+    .active{
+        height: 178px;
+    }
+}

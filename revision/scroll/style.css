@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    padding:10px 30px;
+    
+    
+}
+
+
+.nav-container{
+    background: transparent;
+   z-index: 999;
+   position: absolute;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.nav-ham{
+    display: none;
+}
+
+@media screen and (min-width:500px) {
+    nav{
+        padding:10px 30px;
+    }
+    
+    
+    .nav-container{
+    
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    
+    .links{
+        display: flex;
+        align-items: center;
+        gap:30px;
+    }
+    
+    .logo-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links-container{
+        height: auto !important;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .nav-container{
+        flex-wrap: wrap;
+    }
+    .nav-ham{
+        display: block;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        align-items: flex-start;
+        padding:29px 0;
+        background-color: blue;
+        
+    }
+
+    .links-container{
+        width: 100%;
+       height:0 ;
+       overflow: hidden;
+       transition: ease-in-out ;
+    transition-duration: 1s;
+    }
+
+    nav{
+        padding:10px 30px;
+        background: transparent;
+    }
+    
+}
+
+
+.main{
+    background-image: url(hero-bcg.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.home p{
+    background-color: transparent;
+}
+
+
+
